@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykres Gannta</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+</head>
+<body>
+    
+    <div>
+        <section id="banner">
+            <h1>Wykres Gannta</h1>
+
+            <select onchange="arrowMove()" id="path">
+                <option value="1">Scieżka 1</option>
+                <option value="2">Scieżka 2</option>
+                <option value="3">Scieżka 3</option>
+                <option value="4">Scieżka 4</option>
+                <option value="5">Scieżka 5</option>
+            </select>
+            
+            <div id="taskDiv">
+                <button class="buttons" id="addTaskButton">
+                <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">  <title>ic_fluent_apps_list_24_filled</title> <desc>Created with Sketch.</desc> <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ic_fluent_apps_list_24_filled" fill="#ffffff" fill-rule="nonzero"> <path d="M6.24787561,16.0021244 C7.21437393,16.0021244 7.99787561,16.7856261 7.99787561,17.7521244 L7.99787561,20.25 C7.99787561,21.2164983 7.21437393,22 6.24787561,22 L3.75,22 C2.78350169,22 2,21.2164983 2,20.25 L2,17.7521244 C2,16.7856261 2.78350169,16.0021244 3.75,16.0021244 L6.24787561,16.0021244 Z M9.74809326,18 L21.2528964,18 C21.66711,18 22.0028964,18.3357864 22.0028964,18.75 C22.0028964,19.1296958 21.7207425,19.443491 21.354667,19.4931534 L21.2528964,19.5 L9.74809326,19.5 C9.3338797,19.5 8.99809326,19.1642136 8.99809326,18.75 C8.99809326,18.3703042 9.28024715,18.056509 9.64632271,18.0068466 L9.74809326,18 L21.2528964,18 L9.74809326,18 Z M6.24787561,9.00106219 C7.21437393,9.00106219 7.99787561,9.78456388 7.99787561,10.7510622 L7.99787561,13.2489378 C7.99787561,14.2154361 7.21437393,14.9989378 6.24787561,14.9989378 L3.75,14.9989378 C2.78350169,14.9989378 2,14.2154361 2,13.2489378 L2,10.7510622 C2,9.78456388 2.78350169,9.00106219 3.75,9.00106219 L6.24787561,9.00106219 Z M9.74809326,11 L21.2528964,11 C21.66711,11 22.0028964,11.3357864 22.0028964,11.75 C22.0028964,12.1296958 21.7207425,12.443491 21.354667,12.4931534 L21.2528964,12.5 L9.74809326,12.5 C9.3338797,12.5 8.99809326,12.1642136 8.99809326,11.75 C8.99809326,11.3703042 9.28024715,11.056509 9.64632271,11.0068466 L9.74809326,11 L21.2528964,11 L9.74809326,11 Z M6.24787561,2 C7.21437393,2 7.99787561,2.78350169 7.99787561,3.75 L7.99787561,6.24787561 C7.99787561,7.21437393 7.21437393,7.99787561 6.24787561,7.99787561 L3.75,7.99787561 C2.78350169,7.99787561 2,7.21437393 2,6.24787561 L2,3.75 C2,2.78350169 2.78350169,2 3.75,2 L6.24787561,2 Z M9.74809326,4 L21.2528964,4 C21.66711,4 22.0028964,4.33578644 22.0028964,4.75 C22.0028964,5.12969577 21.7207425,5.44349096 21.354667,5.49315338 L21.2528964,5.5 L9.74809326,5.5 C9.3338797,5.5 8.99809326,5.16421356 8.99809326,4.75 C8.99809326,4.37030423 9.28024715,4.05650904 9.64632271,4.00684662 L9.74809326,4 L21.2528964,4 L9.74809326,4 Z" id="🎨-Color"> </path> </g> </g> </g></svg>
+                    Dodaj nowe zadanie
+                </button>
+                <input type="text" name="" id="taskInput" placeholder="Zadanie  ">
+                <select id="days">
+                    <option value="1">1 Dzień</option>
+                    <option value="2">2 Dzień</option>
+                    <option value="3">3 Dzień</option>
+                    <option value="4">4 Dzień</option>
+                    <option value="5">5 Dzień</option>
+                    <option value="6">6 Dzień</option>
+                    <option value="7">7 Dzień</option>
+                </select>
+            </div>
+            
+            <div id="userDiv">
+                         <button class="buttons" id="addTaskUser">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 18L14 18M17 15V21M7.68213 14C8.63244 14.6318 9.77319 15 10.9999 15C11.7012 15 12.3744 14.8797 13 14.6586M10.5 21H5.6C5.03995 21 4.75992 21 4.54601 20.891C4.35785 20.7951 4.20487 20.6422 4.10899 20.454C4 20.2401 4 19.9601 4 19.4V17C4 15.3431 5.34315 14 7 14H7.5M15 7C15 9.20914 13.2091 11 11 11C8.79086 11 7 9.20914 7 7C7 4.79086 8.79086 3 11 3C13.2091 3 15 4.79086 15 7Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            Dodaj osobę odpowiedzialną
+                        </button>
+                        <select id="userList">
+                            <option value="1">jan</option>
+                            <option value="2">julia</option>
+                        </select>
+                        <input type="text" id="user" placeholder="Imię Nazwisko">
+                        <button class="buttons"  onclick="userAdd()">Dodaj do listy osób</button>
+                        
+            </div>
+            
+
+            
+        </section>
+       
+        
+    </div>
+
+        <div id="chart">
+        <div onclick="ruszTym(event)" id="topTableBorder">
+            <svg id="topArrow" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-down" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1237</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M10.106,12.69 C9.525,13.27 8.584,13.27 8.002,12.69 L1.561,6.246 C0.979,5.665 0.722,4.143 2.561,4.143 L15.549,4.143 C17.45,4.143 17.131,5.664 16.549,6.246 L10.106,12.69 L10.106,12.69 Z" fill="#434343" class="si-glyph-fill"> </path> </g> </g></svg>
+        </div>
+        <div id="leftTableBorder">
+            <svg id="leftArrow" viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-triangle-right" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>1234</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M6.113,15.495 C5.531,16.076 4.01,16.395 4.01,14.494 L4.01,1.506 C4.01,-0.333 5.531,-0.076 6.113,0.506 L12.557,6.948 C13.137,7.529 13.137,8.47 12.557,9.052 L6.113,15.495 L6.113,15.495 Z" fill="#434343" class="si-glyph-fill"> </path> </g> </g></svg>
+        </div>
+        <div id="table"></div>
+    </div>
+
+    <div id="peopleBox">
+        <div id="people"></div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
