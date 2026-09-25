@@ -1,0 +1,192 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+#banner {
+    background-color: blue;
+    color: white;
+    padding: 40px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+#table {
+    background-color: rgb(179, 255, 108);
+    margin: 50px;
+    height: 400px;
+    width: 700px;
+    border: solid 2px rgb(128, 128, 128);
+    position: relative;
+}
+.liniaPozioma {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+
+}
+.liniaPionowa {
+    height: 100%;
+    width: 2px;
+    background-color: rgb(128, 128, 128);
+    position: absolute;
+
+}
+#path {
+    display: block;
+    margin-bottom: 20px;
+}
+#addTaskButton {
+    background-color: rgb(91, 91, 250);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+#addTaskUser {
+    background-color: rgb(91, 91, 250);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+ svg {
+    height: 30px;
+    margin-right: 5px;
+}
+#taskDiv {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+#days {
+    margin-left: 50px;
+}
+#userDiv{
+    margin-top: 20px;
+    display: flex;
+}
+#userList {
+    margin-right: 20px;
+}
+#user {
+    margin-right: 20px;
+}
+
+#chart {
+    position: relative;
+    display: inline-block; 
+}
+#topTableBorder {
+    cursor: pointer;
+    width: 754px;
+    height: 50px;
+    background-color: rgb(63, 151, 63);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#leftTableBorder {
+    width: 50px;
+    height: 404px;
+    background-color: rgb(63, 151, 63);
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+#leftArrow {
+    position: absolute;
+    left: 10px;
+    top: 27px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    transition: top 0.3s;
+}
+#topArrow {
+    position: absolute;
+    top: 10px;
+    left: 87px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    pointer-events: none; 
+    transition: left 0.3s;
+}
+#addTaskButton:hover {
+background-color: rgb(142, 142, 248);
+transition-duration: 0.2s;
+}
+
+#addTaskUser:hover {
+background-color: rgb(142, 142, 248);
+transition-duration: 0.2s;
+}
+
+.zadanie {
+    position: absolute;
+    height: 50px;
+    background-color: rgb(91, 91, 250);
+    border: 2px solid rgb(45, 45, 160);
+    border-radius: 6px;
+    box-sizing: border-box;
+    z-index: 10;
+    overflow: hidden;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    word-break: break-word;
+}
+
+#peopleBox {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+#peopleTitle {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+#people {
+    width: 220px;
+    height: 400px;
+    background-color: rgb(179, 255, 108);
+    border: solid 2px rgb(128, 128, 128);
+    box-sizing: content-box;
+}
+.wierszOsob {
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(128, 128, 128);
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 6px;
+}
+.wierszOsob:last-child {
+    border-bottom: 0;
+}
+.kropka { 
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(23, 133, 23); 
+
+}
+
+.kropkaWybrana {
+    background-color: rgb(245, 46, 46);
+}
