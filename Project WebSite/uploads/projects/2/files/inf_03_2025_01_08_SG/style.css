@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia;
+    text-align: center;
+    background-color: LightSteelBlue;
+}
+#formularz {
+    padding-top: 20px;
+}
+main {
+    overflow: auto;
+    padding: 30px;
+    height: 400px;
+}
+footer {
+    background-color: Orange;
+    padding: 10px;
+}
+img {
+    width: 80%;
+}
+table {
+    width: 70%;
+    margin: auto;
+    border: 1px dotted Maroon;
+}
+tr:hover {
+    background-color: SteelBlue;
+    color: white;
+}
