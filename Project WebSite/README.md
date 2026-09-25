@@ -1,5 +1,8 @@
 # Projekty szkolne — PHP
 
+## Strona projektu
+- URL: https://zinchukmaksym.infinityfreeapp.com
+
 ## Wymagania
 - PHP 8.1+
 - rozszerzenie PDO_SQLite
