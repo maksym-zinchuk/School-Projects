@@ -17,10 +17,20 @@ Features:
 Project location:
 - `Wykre Guanta/v1.1/`
 
+### Project WebSite
+A PHP project for managing and publishing school project submissions.
+
+Project location:
+- `Project WebSite/`
+
+Live site:
+- https://zinchukmaksym.infinityfreeapp.com
+
 ## Tech stack
 - HTML
 - CSS
 - JavaScript
+- PHP
 
 ## Run locally
 1. Open `Wykre Guanta/v1.1/index.html` in a browser.
@@ -30,6 +40,8 @@ Project location:
 ```text
 School-Projects/
 ├── README.md
+├── Project WebSite/
+│   └── README.md
 └── Wykre Guanta/
     ├── v1.0/
     └── v1.1/
